@@ -39,24 +39,19 @@ hydra_storm/
 
 ## 🛠️ Quick Start
 
-### Installation
+### One-Command Setup & Run (Recommended)
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/hydra_storm.git
-   cd hydra_storm
-   ```
+Run the appropriate one-liner for your operating system to automatically clone, install dependencies, and launch the tool.
 
-2. **Install dependencies:**
-   The framework auto-detects and attempts to install missing packages on runtime. However, manual installation is recommended:
-   ```bash
-   pip install -r requirements.txt
-   ```
+#### 🍎 Linux & macOS (Bash/Zsh)
+```bash
+git clone https://github.com/iwmhrab2/hydra-storm.git && cd hydra-storm && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && python3 hydra.py
+```
 
-3. **Run the tool:**
-   ```bash
-   python hydra.py
-   ```
+#### 🪟 Windows (PowerShell - Run as Administrator for Scapy raw sockets)
+```powershell
+git clone https://github.com/iwmhrab2/hydra-storm.git; cd hydra-storm; python -m venv venv; .\venv\Scripts\Activate.ps1; pip install -r requirements.txt; python hydra.py
+```
 
 ---
 
