@@ -55,7 +55,11 @@ git clone https://github.com/iwmhrab2/hydra-storm.git && cd hydra-storm && pytho
 
 #### 🪟 Windows (PowerShell)
 ```powershell
+# Run this to setup & run from scratch:
 git clone https://github.com/iwmhrab2/hydra-storm.git; cd hydra-storm; python -m venv venv; .\venv\Scripts\python.exe -m pip install -r requirements.txt; .\venv\Scripts\python.exe hydra.py
+
+# Or if you already cloned it and just want to run:
+cd hydra-storm; .\venv\Scripts\python.exe hydra.py
 ```
 
 ---
