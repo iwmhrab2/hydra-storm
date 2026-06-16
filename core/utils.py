@@ -13,13 +13,14 @@ def check_dependencies():
     
     missing_packages = []
     
-    # Fast check using pkg_resources
-    import pkg_resources
-    installed_packages = {pkg.key for pkg in pkg_resources.working_set}
+    # Fast check using importlib.metadata
+    from importlib.metadata import distributions
+    installed_packages = {dist.metadata['Name'].lower() for dist in distributions() if dist.metadata['Name']}
     
     for package in required_packages:
-        if package not in installed_packages:
-            # Handle curl_cffi specific naming if needed, but usually it matches
+        # Normalize package names to match metadata style
+        norm_name = package.replace("_", "-").lower()
+        if norm_name not in installed_packages:
             missing_packages.append(package)
 
     if missing_packages:
