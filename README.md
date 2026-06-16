@@ -43,9 +43,10 @@ hydra_storm/
 
 Run the appropriate one-liner for your operating system to automatically clone, install dependencies, and launch the tool.
 
-#### 🪟 Windows (PowerShell - Auto-installs Python if missing)
+#### 🪟 Windows (PowerShell - Recommended)
 ```powershell
-if (!(Get-Command python -ErrorAction SilentlyContinue)) { Write-Host "Python not found. Installing Python 3.12..."; winget install Python.Python.3.12 --silent --accept-source-agreements --accept-package-agreements; $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") }; git clone https://github.com/iwmhrab2/hydra-storm.git; cd hydra-storm; python -m venv venv; .\venv\Scripts\python.exe -m pip install -r requirements.txt; .\venv\Scripts\python.exe hydra.py
+# Bypasses Windows Store python alias issues by using the 'py' launcher:
+git clone https://github.com/iwmhrab2/hydra-storm.git; cd hydra-storm; py -m venv venv; .\venv\Scripts\python.exe -m pip install -r requirements.txt; .\venv\Scripts\python.exe hydra.py
 ```
 
 #### 🍎 macOS (Auto-installs Python via Homebrew if missing)
