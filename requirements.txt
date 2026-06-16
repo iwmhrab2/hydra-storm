@@ -1,0 +1,10 @@
+scapy
+curl_cffi
+paramiko
+h2
+websockets
+beautifulsoup4
+dnspython
+aiohttp
+rich
+requests
