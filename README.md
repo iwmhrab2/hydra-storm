@@ -48,7 +48,12 @@ Run the appropriate one-liner for your operating system to automatically clone, 
 git clone https://github.com/iwmhrab2/hydra-storm.git && cd hydra-storm && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && python3 hydra.py
 ```
 
-#### 🪟 Windows (PowerShell - Avoids ExecutionPolicy restrictions)
+#### 🪟 Windows (Command Prompt - CMD)
+```cmd
+git clone https://github.com/iwmhrab2/hydra-storm.git && cd hydra-storm && python -m venv venv && venv\Scripts\python.exe -m pip install -r requirements.txt && venv\Scripts\python.exe hydra.py
+```
+
+#### 🪟 Windows (PowerShell)
 ```powershell
 git clone https://github.com/iwmhrab2/hydra-storm.git; cd hydra-storm; python -m venv venv; .\venv\Scripts\python.exe -m pip install -r requirements.txt; .\venv\Scripts\python.exe hydra.py
 ```
