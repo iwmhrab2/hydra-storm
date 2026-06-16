@@ -42,7 +42,7 @@ async def run_live_status(duration: int):
         console=console,
         transient=True
     ) as progress:
-        task = progress.add_task("Stressing Target...", total=duration, rps=0, total=0)
+        task = progress.add_task("Stressing Target...", total=duration, rps=0)
         
         while not progress.finished:
             await asyncio.sleep(0.5)
