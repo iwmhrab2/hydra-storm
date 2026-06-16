@@ -1,5 +1,5 @@
 """
-HYDRA STORM v7.0 — WebSocket Flood Vector
+HYDRA STORM v1.0 — WebSocket Flood Vector
 Uses 'websockets' if installed, otherwise raw socket WS handshake + framing.
 """
 

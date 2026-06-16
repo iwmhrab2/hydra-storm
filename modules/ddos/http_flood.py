@@ -1,5 +1,5 @@
 """
-HYDRA STORM v7.0 — HTTP Flood Vectors
+HYDRA STORM v1.0 — HTTP Flood Vectors
 Keep-alive reuse, proxy tunnel, HTTP/2 multiplex.
 """
 

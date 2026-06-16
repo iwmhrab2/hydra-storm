@@ -1,5 +1,5 @@
 """
-HYDRA STORM v7.0 — TCP Flood Vectors
+HYDRA STORM v1.0 — TCP Flood Vectors
 TCPHammer (pure socket), SYN/ACK/RST floods (scapy if available).
 """
 

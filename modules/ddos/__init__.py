@@ -1,5 +1,5 @@
 """
-HYDRA STORM v7.0 — DDoS Module Package
+HYDRA STORM v1.0 — DDoS Module Package
 All attack vectors, one import away.
 """
 

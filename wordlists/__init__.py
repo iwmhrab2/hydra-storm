@@ -1,1 +1,1 @@
-# Hydra Storm v7.0 — Wordlists package
+# Hydra Storm v1.0 — Wordlists package

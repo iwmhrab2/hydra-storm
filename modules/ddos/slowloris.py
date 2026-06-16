@@ -1,5 +1,5 @@
 """
-HYDRA STORM v7.0 — Slow HTTP Attack Vectors
+HYDRA STORM v1.0 — Slow HTTP Attack Vectors
 Slowloris, RUDY, SlowRead — connection exhaustion through patience.
 The tortoise kills the hare.
 """

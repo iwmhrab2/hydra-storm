@@ -1,5 +1,5 @@
 """
-Hydra Storm v7.0 — Subdomain Enumerator
+Hydra Storm v1.0 — Subdomain Enumerator
 Bruteforce + Certificate Transparency (crt.sh) + Cloudflare detection.
 """
 

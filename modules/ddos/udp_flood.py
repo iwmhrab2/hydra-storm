@@ -1,5 +1,5 @@
 """
-HYDRA STORM v7.0 — UDP Flood Vectors
+HYDRA STORM v1.0 — UDP Flood Vectors
 Raw cannon + DNS/NTP/SSDP amplification.
 Packets built with struct — no external deps required.
 """

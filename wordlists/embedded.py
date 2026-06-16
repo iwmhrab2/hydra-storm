@@ -1,5 +1,5 @@
 """
-Hydra Storm v7.0 — Embedded Wordlists
+Hydra Storm v1.0 — Embedded Wordlists
 =======================================
 Built-in credential, directory, subdomain, and payload lists.
 Curated from real-world breach patterns and common deployment defaults.

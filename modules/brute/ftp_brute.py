@@ -1,5 +1,5 @@
 """
-Hydra Storm v7.0 — FTP Brute Force Module
+Hydra Storm v1.0 — FTP Brute Force Module
 ===========================================
 Pure stdlib ftplib credential tester with anonymous access detection
 and automatic directory listing on successful auth.

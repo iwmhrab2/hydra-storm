@@ -1,5 +1,5 @@
 """
-Hydra Storm v7.0 — Vulnerability Scanner
+Hydra Storm v1.0 — Vulnerability Scanner
 Checks for common misconfigurations, exposed files, missing security headers.
 """
 

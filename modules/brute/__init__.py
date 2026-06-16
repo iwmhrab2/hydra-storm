@@ -1,5 +1,5 @@
 """
-Hydra Storm v7.0 — Brute Force Modules
+Hydra Storm v1.0 — Brute Force Modules
 ========================================
 Attack modules for HTTP, SSH, FTP, SMTP credential testing.
 """

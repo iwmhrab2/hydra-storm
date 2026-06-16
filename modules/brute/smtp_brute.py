@@ -1,5 +1,5 @@
 """
-Hydra Storm v7.0 — SMTP Brute Force Module
+Hydra Storm v1.0 — SMTP Brute Force Module
 ============================================
 Pure stdlib smtplib credential tester.
 Supports PLAIN / LOGIN / CRAM-MD5 auth, VRFY enumeration,

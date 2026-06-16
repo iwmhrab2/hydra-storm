@@ -19,7 +19,7 @@ class WAFDetector:
         log_info(f"Scanning {self.target} for Web Application Firewalls (WAF)...")
         try:
             # We send a slightly suspicious payload to trigger WAF headers
-            headers = {"User-Agent": "HydraStorm-Scanner/7.0"}
+            headers = {"User-Agent": "HydraStorm-Scanner/1.0"}
             response = requests.get(f"{self.target}/?id=1' OR '1'='1", headers=headers, timeout=10)
             
             detected_wafs = []

@@ -1,5 +1,5 @@
 """
-Hydra Storm v7.0 — Web Attack Modules
+Hydra Storm v1.0 — Web Attack Modules
 """
 
 from .dir_buster import DirBuster

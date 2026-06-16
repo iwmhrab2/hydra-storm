@@ -1,5 +1,5 @@
 """
-HYDRA STORM v7.0 — DDoS Engine / Orchestrator
+HYDRA STORM v1.0 — DDoS Engine / Orchestrator
 Multiprocess attack launcher with shared metrics, live status, graceful shutdown.
 """
 

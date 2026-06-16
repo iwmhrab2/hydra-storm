@@ -1,5 +1,5 @@
 """
-Hydra Storm v7.0 — Scanner Modules
+Hydra Storm v1.0 — Scanner Modules
 """
 
 from .port_scanner import PortScanner

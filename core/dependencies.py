@@ -1,5 +1,5 @@
 """
-core.dependencies — Auto dependency checker & installer for Hydra Storm v7.0
+core.dependencies — Auto dependency checker & installer for Hydra Storm v1.0
 """
 
 from __future__ import annotations

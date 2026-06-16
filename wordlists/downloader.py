@@ -1,5 +1,5 @@
 """
-Hydra Storm v7.0 — Wordlist Downloader & Manager
+Hydra Storm v1.0 — Wordlist Downloader & Manager
 ==================================================
 Downloads popular wordlists from GitHub (SecLists etc.),
 manages local storage, and loads them into memory.
@@ -144,7 +144,7 @@ class WordlistManager:
         print(f"      URL : {url}")
         print(f"      Dest: {dest}")
 
-        req = Request(url, headers={"User-Agent": "HydraStorm/7.0"})
+        req = Request(url, headers={"User-Agent": "HydraStorm/1.0"})
 
         try:
             resp = urlopen(req, timeout=30)
