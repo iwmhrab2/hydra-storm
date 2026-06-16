@@ -43,23 +43,19 @@ hydra_storm/
 
 Run the appropriate one-liner for your operating system to automatically clone, install dependencies, and launch the tool.
 
-#### 🍎 Linux & macOS (Bash/Zsh)
-```bash
-git clone https://github.com/iwmhrab2/hydra-storm.git && cd hydra-storm && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && python3 hydra.py
-```
-
-#### 🪟 Windows (Command Prompt - CMD)
-```cmd
-git clone https://github.com/iwmhrab2/hydra-storm.git && cd hydra-storm && python -m venv venv && venv\Scripts\python.exe -m pip install -r requirements.txt && venv\Scripts\python.exe hydra.py
-```
-
-#### 🪟 Windows (PowerShell)
+#### 🪟 Windows (PowerShell - Auto-installs Python if missing)
 ```powershell
-# Run this to setup & run from scratch:
-git clone https://github.com/iwmhrab2/hydra-storm.git; cd hydra-storm; python -m venv venv; .\venv\Scripts\python.exe -m pip install -r requirements.txt; .\venv\Scripts\python.exe hydra.py
+if (!(Get-Command python -ErrorAction SilentlyContinue)) { Write-Host "Python not found. Installing Python 3.12..."; winget install Python.Python.3.12 --silent --accept-source-agreements --accept-package-agreements; $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") }; git clone https://github.com/iwmhrab2/hydra-storm.git; cd hydra-storm; python -m venv venv; .\venv\Scripts\python.exe -m pip install -r requirements.txt; .\venv\Scripts\python.exe hydra.py
+```
 
-# Or if you already cloned it and just want to run:
-cd hydra-storm; .\venv\Scripts\python.exe hydra.py
+#### 🍎 macOS (Auto-installs Python via Homebrew if missing)
+```bash
+command -v python3 >/dev/null 2>&1 || { echo "Python3 not found. Installing via Homebrew..."; brew install python; }; git clone https://github.com/iwmhrab2/hydra-storm.git && cd hydra-storm && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && python3 hydra.py
+```
+
+#### 🐧 Linux (Debian/Ubuntu - Auto-installs Python if missing)
+```bash
+command -v python3 >/dev/null 2>&1 || { echo "Python3 not found. Installing..."; sudo apt update && sudo apt install -y python3 python3-pip python3-venv; }; git clone https://github.com/iwmhrab2/hydra-storm.git && cd hydra-storm && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && python3 hydra.py
 ```
 
 ---
